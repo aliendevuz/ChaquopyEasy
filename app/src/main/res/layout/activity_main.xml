@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActivityChaquopy">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Python Compiler"
+        android:gravity="center"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="216dp"
+        android:inputType="textMultiLine"
+        android:hint="Write code to here..."
+        android:text="from time import sleep\nprint(3)\nsleep(1)\nprint(2)\nsleep(1)\nprint(1)\nsleep(1)\nprint('Boom!')\n"
+        android:gravity="start|top"
+        android:background="#20003080"
+        android:padding="12dp"
+        android:layout_marginVertical="24dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/b_runner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Run code..."
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:background="#20003080"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_output"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+    </ScrollView>
+
+</LinearLayout>
